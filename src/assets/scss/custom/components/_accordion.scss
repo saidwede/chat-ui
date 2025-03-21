@@ -1,7 +1,9 @@
 //
 // accordion.scss
 //
-
+.new-border-top{
+    border-top: solid #ffffff1a 1px;
+}
 .custom-accordion {
     .card {
         + .card {

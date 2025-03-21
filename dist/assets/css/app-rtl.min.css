@@ -360,6 +360,10 @@ File: Main Css File
           filter: invert(1) grayscale(100%) brightness(200%);
 }
 
+.new-border-top {
+  border-top: solid rgba(255, 255, 255, 0.1019607843) 1px;
+}
+
 .custom-accordion .card + .card {
   margin-top: 0.5rem;
 }

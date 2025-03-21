@@ -30,11 +30,11 @@ button,a {
 [data-bs-theme="dark"]{
   .btn-light{
       color: var(--#{$prefix}dark);
-      background-color: var(--#{$prefix}light);
+      background-color: #067AA1;
       border-color: var(--#{$prefix}light);
       &:hover{
           color: var(--#{$prefix}dark);
-          background-color: rgba(var(--#{$prefix}light-rgb), 0.75);
+          background-color: #045e7b;
           border-color: rgba(var(--#{$prefix}light-rgb), 0.75);
       }
   }

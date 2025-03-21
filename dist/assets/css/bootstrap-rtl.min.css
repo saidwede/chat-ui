@@ -13417,12 +13417,12 @@ button, a {
 
 [data-bs-theme=dark] .btn-light {
   color: var(--bs-dark);
-  background-color: var(--bs-light);
+  background-color: #067AA1;
   border-color: var(--bs-light);
 }
 [data-bs-theme=dark] .btn-light:hover {
   color: var(--bs-dark);
-  background-color: rgba(var(--bs-light-rgb), 0.75);
+  background-color: #045e7b;
   border-color: rgba(var(--bs-light-rgb), 0.75);
 }
 [data-bs-theme=dark] .btn-check:focus + .btn-light,
