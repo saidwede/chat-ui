@@ -47,7 +47,7 @@ File: Main Css File
   --bs-sidebar-menu-item-active-color: #ffffff;
   --bs-sidebar-menu-item-active-bg: #3e4a56;
   --bs-sidebar-sub-bg: linear-gradient(to right, #02203A, #0C2955);
-  --bs-accordion-button-bg: #36404a;
+  --bs-accordion-button-bg: #ffffff2a;
   --bs-accordion-bg: transparent;
   --bs-theme-mode-icon: "";
   --bs-dropdown-bg: #313a43;
@@ -78,7 +78,7 @@ File: Main Css File
   width: 100px;
   height: 100px;
   margin-top: -50px;
-  margin-right: -50px;
+  margin-left: -50px;
   opacity: 0;
   background: rgba(0, 0, 0, 0.2);
   background: radial-gradient(rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255, 0) 70%);
@@ -159,7 +159,7 @@ File: Main Css File
 .waves-input-wrapper .waves-button-input {
   position: relative;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -371,12 +371,13 @@ File: Main Css File
 }
 
 .accordion-button:after {
-  margin-right: auto;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .accordion-item {
   background-color: #fff;
+  border: rgba(255, 255, 255, 0.2274509804) solid 1px;
 }
 
 [data-bs-theme=dark] .accordion-item {
@@ -393,26 +394,26 @@ File: Main Css File
 }
 
 [type=tel]::-webkit-input-placeholder, [type=url]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=number]::-webkit-input-placeholder {
-  text-align: right;
+  text-align: left; /*rtl: right*/
 }
 
 [type=tel]::-moz-placeholder, [type=url]::-moz-placeholder, [type=email]::-moz-placeholder, [type=number]::-moz-placeholder {
-  text-align: right;
+  text-align: left; /*rtl: right*/
 }
 
 [type=tel]:-ms-input-placeholder, [type=url]:-ms-input-placeholder, [type=email]:-ms-input-placeholder, [type=number]:-ms-input-placeholder {
-  text-align: right;
+  text-align: left; /*rtl: right*/
 }
 
 [type=tel]::-ms-input-placeholder, [type=url]::-ms-input-placeholder, [type=email]::-ms-input-placeholder, [type=number]::-ms-input-placeholder {
-  text-align: right;
+  text-align: left; /*rtl: right*/
 }
 
 [type=tel]::placeholder,
 [type=url]::placeholder,
 [type=email]::placeholder,
 [type=number]::placeholder {
-  text-align: right;
+  text-align: left; /*rtl: right*/
 }
 
 .custom-checkbox-primary .custom-control-input:checked ~ .custom-control-label:before, .custom-radio-primary .custom-control-input:checked ~ .custom-control-label:before {
@@ -468,7 +469,7 @@ File: Main Css File
 }
 
 .custom-switch-md {
-  padding-right: 3rem;
+  padding-left: 3rem;
 }
 .custom-switch-md .custom-control-label {
   line-height: 20px;
@@ -477,20 +478,20 @@ File: Main Css File
   width: 40px;
   height: 20px;
   border-radius: 30px;
-  right: -3rem;
+  left: -3rem;
 }
 .custom-switch-md .custom-control-label:after {
   width: 16px;
   height: 16px;
-  right: calc(-3rem + 2px);
+  left: calc(-3rem + 2px);
 }
 .custom-switch-md .custom-control-input:checked ~ .custom-control-label::after {
-  -webkit-transform: translateX(-1.25rem);
-          transform: translateX(-1.25rem);
+  -webkit-transform: translateX(1.25rem);
+          transform: translateX(1.25rem);
 }
 
 .custom-switch-lg {
-  padding-right: 3.75rem;
+  padding-left: 3.75rem;
 }
 .custom-switch-lg .custom-control-label {
   line-height: 24px;
@@ -499,17 +500,17 @@ File: Main Css File
   width: 48px;
   height: 24px;
   border-radius: 30px;
-  right: -3.75rem;
+  left: -3.75rem;
 }
 .custom-switch-lg .custom-control-label:after {
   width: 20px;
   height: 20px;
-  right: calc(-3.75rem + 2px);
+  left: calc(-3.75rem + 2px);
   border-radius: 50%;
 }
 .custom-switch-lg .custom-control-input:checked ~ .custom-control-label::after {
-  -webkit-transform: translateX(-1.5rem);
-          transform: translateX(-1.5rem);
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
 }
 
 .custom-control-label::before {
@@ -556,10 +557,10 @@ File: Main Css File
   overflow: hidden;
   padding: 0;
   margin: 0;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: auto !important;
   height: auto !important;
   z-index: 0;
@@ -572,9 +573,9 @@ File: Main Css File
   resize: none !important;
   position: absolute;
   top: 0;
-  right: 0 !important;
-  bottom: 0;
   left: 0 !important;
+  bottom: 0;
+  right: 0 !important;
   padding: 0;
   margin: 0;
   -webkit-overflow-scrolling: touch;
@@ -621,7 +622,7 @@ File: Main Css File
   width: 100%;
   max-width: 1px;
   position: relative;
-  float: right;
+  float: left;
   max-height: 1px;
   overflow: hidden;
   z-index: -1;
@@ -644,7 +645,7 @@ File: Main Css File
   opacity: 0;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   height: 1000%;
   width: 1000%;
   min-height: 1px;
@@ -657,7 +658,7 @@ File: Main Css File
 .simplebar-track {
   z-index: 1;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   pointer-events: none;
   overflow: hidden;
@@ -677,7 +678,7 @@ File: Main Css File
 
 .simplebar-scrollbar {
   position: absolute;
-  left: 2px;
+  right: 2px;
   width: 7px;
   min-height: 10px;
 }
@@ -687,8 +688,8 @@ File: Main Css File
   content: "";
   background: #a2adb7;
   border-radius: 7px;
-  right: 0;
   left: 0;
+  right: 0;
   opacity: 0;
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
@@ -712,19 +713,19 @@ File: Main Css File
 }
 
 .simplebar-track.simplebar-horizontal {
-  right: 0;
+  left: 0;
   height: 11px;
 }
 
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
   height: 100%;
-  right: 2px;
   left: 2px;
+  right: 2px;
 }
 
 .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
-  left: auto;
-  right: 0;
+  right: auto;
+  left: 0;
   top: 2px;
   height: 7px;
   min-height: 0;
@@ -734,12 +735,12 @@ File: Main Css File
 
 /* Rtl support */
 [data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical {
-  left: auto;
-  right: 0;
+  right: auto;
+  left: 0;
 }
 
 .hs-dummy-scrollbar-size {
-  direction: ltr;
+  direction: rtl;
   position: fixed;
   opacity: 0;
   visibility: hidden;
@@ -751,7 +752,7 @@ File: Main Css File
 
 .simplebar-hide-scrollbar {
   position: fixed;
-  right: 0;
+  left: 0;
   visibility: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -887,8 +888,8 @@ File: Main Css File
 .chat-leftsidebar .user-status-box .chat-user-img {
   position: absolute;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
 }
 
 .chat-search-box .form-control {
@@ -897,7 +898,7 @@ File: Main Css File
 .chat-search-box .search-icon-btn {
   font-size: 16px;
   position: absolute;
-  left: 13px;
+  right: 13px;
   top: 0;
 }
 
@@ -954,8 +955,8 @@ File: Main Css File
 .chat-list li .unread-message {
   position: absolute;
   display: inline-block;
-  left: 24px;
-  right: auto;
+  right: 24px;
+  left: auto;
   top: 33px;
 }
 .chat-list li .unread-message .badge {
@@ -974,8 +975,8 @@ File: Main Css File
   border-radius: 50%;
   border: 2px solid var(--bs-white);
   position: absolute;
-  left: 0;
-  right: auto;
+  right: 0;
+  left: auto;
   bottom: 0;
 }
 .chat-user-img.online .user-status {
@@ -983,6 +984,9 @@ File: Main Css File
 }
 .chat-user-img.away .user-status {
   background-color: #ffd166;
+}
+.chat-user-img.busy .user-status {
+  background-color: #ef476f;
 }
 
 .contact-list li {
@@ -996,8 +1000,8 @@ File: Main Css File
 }
 .profile-user .profile-photo-edit {
   position: absolute;
-  left: 0;
-  right: auto;
+  right: 0;
+  left: auto;
   bottom: 0;
 }
 
@@ -1011,13 +1015,13 @@ File: Main Css File
 @media (max-width: 991.98px) {
   .user-chat {
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     visibility: hidden;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     z-index: 99;
   }
   .user-chat.user-chat-show {
@@ -1033,8 +1037,8 @@ File: Main Css File
 @media (max-width: 991.98px) {
   .user-chat-topbar {
     position: fixed;
-    right: 0;
     left: 0;
+    right: 0;
     top: 0;
     z-index: 1;
   }
@@ -1065,7 +1069,7 @@ File: Main Css File
   clear: both;
 }
 .chat-conversation .chat-avatar {
-  margin: 0 0 0 16px;
+  margin: 0 16px 0 0;
 }
 .chat-conversation .chat-avatar img {
   width: 36px;
@@ -1090,7 +1094,7 @@ File: Main Css File
   position: absolute;
   width: calc(50% - 60px);
   height: 1px;
-  right: 0;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.1333333333);
   top: 50%;
 }
@@ -1099,7 +1103,7 @@ File: Main Css File
   position: absolute;
   width: calc(50% - 60px);
   height: 1px;
-  left: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.1333333333);
   top: 50%;
 }
@@ -1125,7 +1129,7 @@ File: Main Css File
 .chat-conversation .conversation-list .ctext-wrap-content {
   padding: 12px 20px;
   background-color: #067aa1;
-  border-radius: 8px 8px 0 8px;
+  border-radius: 8px 8px 8px 0;
   color: #fff;
   position: relative;
 }
@@ -1133,10 +1137,10 @@ File: Main Css File
   content: "";
   position: absolute;
   border: 5px solid transparent;
-  border-right-color: #067aa1;
+  border-left-color: #067aa1;
   border-top-color: #067aa1;
-  right: 0;
-  left: auto;
+  left: 0;
+  right: auto;
   bottom: -9px;
 }
 @media (max-width: 575.98px) {
@@ -1161,7 +1165,7 @@ File: Main Css File
 .chat-conversation .conversation-list .chat-time {
   font-size: 12px;
   margin-top: 4px;
-  text-align: left;
+  text-align: right;
   color: rgba(255, 255, 255, 0.5);
 }
 .chat-conversation .conversation-list .message-img {
@@ -1176,8 +1180,8 @@ File: Main Css File
 }
 .chat-conversation .conversation-list .message-img .message-img-link {
   position: absolute;
-  left: 10px;
-  right: auto;
+  right: 10px;
+  left: auto;
   bottom: 10px;
 }
 .chat-conversation .conversation-list .message-img .message-img-link li > a {
@@ -1193,16 +1197,16 @@ File: Main Css File
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  margin-left: 0px;
-  margin-right: 16px;
+  margin-right: 0px;
+  margin-left: 16px;
 }
 .chat-conversation .right .chat-time {
-  text-align: right;
+  text-align: left;
   color: var(--bs-secondary-color);
 }
 .chat-conversation .right .conversation-list {
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
 }
 .chat-conversation .right .conversation-list .ctext-wrap {
   -webkit-box-pack: end;
@@ -1215,15 +1219,15 @@ File: Main Css File
           order: 2;
   background-color: #3C3C48;
   color: var(--bs-dark);
-  text-align: left;
-  border-radius: 8px 8px 8px 0px;
+  text-align: right;
+  border-radius: 8px 8px 0px 8px;
 }
 .chat-conversation .right .conversation-list .ctext-wrap .ctext-wrap-content:before {
   border: 5px solid transparent;
   border-top-color: #3C3C48;
-  border-left-color: #3C3C48;
-  right: auto;
-  left: 0px;
+  border-right-color: #3C3C48;
+  left: auto;
+  right: 0px;
 }
 .chat-conversation .right .conversation-list .dropdown {
   -webkit-box-ordinal-group: 2;
@@ -1231,8 +1235,8 @@ File: Main Css File
           order: 1;
 }
 .chat-conversation .right .conversation-list .dropdown .dropdown-menu[style] {
-  left: 0 !important;
-  right: auto !important;
+  right: 0 !important;
+  left: auto !important;
 }
 .chat-conversation .right .dot {
   background-color: #343a40;
@@ -1255,8 +1259,8 @@ File: Main Css File
 @media (max-width: 991.98px) {
   .chat-input-section {
     position: fixed;
-    right: 0;
     left: 0;
+    right: 0;
     bottom: 0;
     z-index: 1;
   }
@@ -1271,7 +1275,7 @@ File: Main Css File
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  margin-left: -1px;
+  margin-right: -1px;
   background: #fff;
   -webkit-animation: wave 1.3s linear infinite;
           animation: wave 1.3s linear infinite;
@@ -1309,21 +1313,21 @@ File: Main Css File
 }
 .user-profile-sidebar {
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(#02203A), to(#0C2955));
-  background: linear-gradient(to left, #02203A, #0C2955);
+  background: -webkit-gradient(linear, left top, right top, from(#02203A), to(#0C2955));
+  background: linear-gradient(to right, #02203A, #0C2955);
   display: none;
   min-width: 380px;
   max-width: 380px;
 }
 @media (min-width: 992px) {
   .user-profile-sidebar {
-    border-right: 4px solid rgba(255, 255, 255, 0.137254902);
+    border-left: 4px solid rgba(255, 255, 255, 0.137254902);
   }
 }
 @media (max-width: 1199.98px) {
   .user-profile-sidebar {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 99;
   }
@@ -1357,7 +1361,5 @@ File: Main Css File
   display: none;
 }
 [data-bs-theme=dark] .auth-logo .logo-light {
-  display: block;
-}bs-theme=dark] .auth-logo .logo-light {
   display: block;
 }

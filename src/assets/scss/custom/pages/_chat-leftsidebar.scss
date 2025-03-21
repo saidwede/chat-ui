@@ -154,6 +154,12 @@
             background-color: $warning;
         }
     }
+
+    &.busy {
+        .user-status {
+            background-color: $danger;
+        }
+    }
 }
 
 // contact list

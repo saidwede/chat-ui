@@ -47,7 +47,7 @@ File: Main Css File
   --bs-sidebar-menu-item-active-color: #ffffff;
   --bs-sidebar-menu-item-active-bg: #3e4a56;
   --bs-sidebar-sub-bg: linear-gradient(to right, #02203A, #0C2955);
-  --bs-accordion-button-bg: #36404a;
+  --bs-accordion-button-bg: #ffffff2a;
   --bs-accordion-bg: transparent;
   --bs-theme-mode-icon: "";
   --bs-dropdown-bg: #313a43;
@@ -377,6 +377,7 @@ File: Main Css File
 
 .accordion-item {
   background-color: #fff;
+  border: rgba(255, 255, 255, 0.2274509804) solid 1px;
 }
 
 [data-bs-theme=dark] .accordion-item {
@@ -983,6 +984,9 @@ File: Main Css File
 }
 .chat-user-img.away .user-status {
   background-color: #ffd166;
+}
+.chat-user-img.busy .user-status {
+  background-color: #ef476f;
 }
 
 .contact-list li {
